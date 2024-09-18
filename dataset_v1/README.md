@@ -1,21 +1,26 @@
-# Large-Scale Hate Speech Dataset
-This repository contains the utilized dataset in the LREC 2022 paper "Large-Scale Hate Speech Detection with Cross-Domain Transfer". This study mainly focuses hate speech detection in Turkish and English. In addition, domain transfer success between hate domains is also examined.
-
-## Dataset v1 (hate_speech_dataset.csv)
+# Toraman22 Hate Speech Dataset v1
 
 The dataset is composed of 200,000 tweets. Half of them is Turkish and other half is English. We also have domain information of the hate speech. These domains are Religion, Gender, Race, Politics, Sports. Each domain has 20,000 tweets in each respective language. 5 hate annotations of the tweet are also given. Since we followed Twitter's Terms and Conditions, publish tweet IDs not the tweet content directly. Explanations of the columns of the file are as follows:
 
-| Column Name  | Description |
-| ------------- | ------------- |
-| TweetID | Twitter ID of the tweet |
-| LangID | Language of the tweet 0-Turkish, 1-English |
-| TopicID | Domain of the topic 0-Religion, 1-Gender, 2-Race, 3-Politics, 4-Sports |
-| Label_1 | Annotation of the first annotator 0-Normal, 1-Offensive, 2-Hate |
-| Label_2 | Annotation of the second annotator 0-Normal, 1-Offensive, 2-Hate |
-| Label_3 | Annotation of the third annotator 0-Normal, 1-Offensive, 2-Hate |
-| Label_4 | Annotation of the fourth annotator 0-Normal, 1-Offensive, 2-Hate |
-| Label_5 | Annotation of the fifth annotator 0-Normal, 1-Offensive, 2-Hate |
-| HateLabel | Final hate label decision 0-Normal, 1-Offensive, 2-Hate |
+tweet_id
+user_id	
+user_name	
+screen_name
+verified: If user's profile is verified.	
+created_at: The date that user's profile is created.	
+friends_count: User's total number of followees	
+followers_count: User's total number of followers	
+statuses_count: User's total number of sharings	
+favourites_count: User's total number of likes	
+default_piclabel: User's profile picture	
+topic: Religion (0), Gender (1), Race (2), Politics (3), or Sports (4)
+language: Turkish (0) or English (1)	
+date: Tweet's published date	
+text: Tweet's text contents
+label_0: How many times tweet is labeled Normal (0)
+label_1: How many times tweet is labeled Offensive (1)
+label_2: How many times tweet is labeled Hate (2)	
+label_score: Final annotation label
 
 Distibution of tweets in the dataset is as follows:
 
