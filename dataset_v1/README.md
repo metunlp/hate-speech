@@ -2,24 +2,42 @@
 
 The dataset is composed of 200,000 tweets. Half of them is Turkish and other half is English. We also have domain information of the hate speech. These domains are Religion, Gender, Race, Politics, Sports. Each domain has 20,000 tweets in each respective language. 5 hate annotations of the tweet are also given. Since we followed Twitter's Terms and Conditions, publish tweet IDs not the tweet content directly. Explanations of the columns of the file are as follows:
 
-tweet_id
+tweet_id 
+
 user_id	
+
 user_name	
-screen_name
+
+screen_name 
+
 verified: If user's profile is verified.	
+
 created_at: The date that user's profile is created.	
+
 friends_count: User's total number of followees	
+
 followers_count: User's total number of followers	
+
 statuses_count: User's total number of sharings	
+
 favourites_count: User's total number of likes	
+
 default_piclabel: User's profile picture	
-topic: Religion (0), Gender (1), Race (2), Politics (3), or Sports (4)
+
+topic: Religion (0), Gender (1), Race (2), Politics (3), or Sports (4) 
+
 language: Turkish (0) or English (1)	
+
 date: Tweet's published date	
+
 text: Tweet's text contents
+
 label_0: How many times tweet is labeled Normal (0)
+
 label_1: How many times tweet is labeled Offensive (1)
+
 label_2: How many times tweet is labeled Hate (2)	
+
 label_score: Final annotation label
 
 Distibution of tweets in the dataset is as follows:
